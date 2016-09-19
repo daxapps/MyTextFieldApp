@@ -12,6 +12,9 @@
 		E0584D231D8F695E00535BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0584D211D8F695E00535BF3 /* Main.storyboard */; };
 		E0584D251D8F695E00535BF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0584D241D8F695E00535BF3 /* Assets.xcassets */; };
 		E0584D281D8F695E00535BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0584D261D8F695E00535BF3 /* LaunchScreen.storyboard */; };
+		E0584D301D8F6A9200535BF3 /* ZipCodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0584D2F1D8F6A9200535BF3 /* ZipCodeDelegate.swift */; };
+		E0584D321D8F6ABB00535BF3 /* CashDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0584D311D8F6ABB00535BF3 /* CashDelegate.swift */; };
+		E0584D341D8F6AD600535BF3 /* SwitchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0584D331D8F6AD600535BF3 /* SwitchDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		E0584D241D8F695E00535BF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0584D271D8F695E00535BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0584D291D8F695E00535BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0584D2F1D8F6A9200535BF3 /* ZipCodeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeDelegate.swift; sourceTree = "<group>"; };
+		E0584D311D8F6ABB00535BF3 /* CashDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashDelegate.swift; sourceTree = "<group>"; };
+		E0584D331D8F6AD600535BF3 /* SwitchDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				E0584D241D8F695E00535BF3 /* Assets.xcassets */,
 				E0584D261D8F695E00535BF3 /* LaunchScreen.storyboard */,
 				E0584D291D8F695E00535BF3 /* Info.plist */,
+				E0584D2F1D8F6A9200535BF3 /* ZipCodeDelegate.swift */,
+				E0584D311D8F6ABB00535BF3 /* CashDelegate.swift */,
+				E0584D331D8F6AD600535BF3 /* SwitchDelegate.swift */,
 			);
 			path = MyTextFieldApp;
 			sourceTree = "<group>";
@@ -138,7 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0584D201D8F695E00535BF3 /* ViewController.swift in Sources */,
+				E0584D301D8F6A9200535BF3 /* ZipCodeDelegate.swift in Sources */,
+				E0584D341D8F6AD600535BF3 /* SwitchDelegate.swift in Sources */,
 				E0584D1E1D8F695E00535BF3 /* AppDelegate.swift in Sources */,
+				E0584D321D8F6ABB00535BF3 /* CashDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -247,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -261,10 +273,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SJRX8SM5HE;
 				INFOPLIST_FILE = MyTextFieldApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daxapps.MyTextFieldApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -274,10 +287,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SJRX8SM5HE;
 				INFOPLIST_FILE = MyTextFieldApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daxapps.MyTextFieldApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
