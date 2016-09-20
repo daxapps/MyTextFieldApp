@@ -12,12 +12,16 @@ import UIKit
 class ZipCodeDelegate: NSObject, UITextFieldDelegate {
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-    
-    
-    
+        
+        var newText = textField.text! as NSString
+        newText = newText.stringByReplacingCharactersInRange(range, withString: string)
+        
+        return newText.length <= 5
     }
     
-    func textFieldDidBeginEditing(textField: UITextField) {
-        textField.text = ""
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
     }
 }

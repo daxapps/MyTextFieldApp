@@ -10,38 +10,44 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var zipCodeTextField: UIView!
-    @IBOutlet weak var cashTextField: UIView!
-    @IBOutlet weak var switchControledTextField: UIView!
-    @IBAction func `switch`(sender: AnyObject) {
-    }
+    @IBOutlet weak var zipCodeTextField: UITextField!
+    @IBOutlet weak var cashTextField: UITextField!
+    @IBOutlet weak var switchControlledTextField: UITextField!
+
+
+    @IBOutlet weak var editingSwitch: UISwitch!
+    
 
     let zipDelegate = ZipCodeDelegate()
     let cashDelegate = CashDelegate()
-    let switchDelegate = SwitchDelegate()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.zipCodeTextField.delegate = zipDelegate
-        self.cashTextField.delegate = cashDelegate
-        self.switchControledTextField = switchDelegate
+        self.zipCodeTextField.delegate = self.zipDelegate
+        self.cashTextField.delegate = self.cashDelegate
+        self.switchControlledTextField.delegate = self
         
-        
+        self.editingSwitch.setOn(false, animated: false)
     }
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        
-        // Figure out what the new text will be, if we return true
-        var newText: NSString = textField.text!
-        newText = newText.stringByReplacingCharactersInRange(range, withString: string)
-        
-        
-        // returning true gives the text field permission to change its text
-        return true;
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        return self.editingSwitch.on
     }
-
-
-
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
+    }
+    
+    // MARK: Actions
+    
+    @IBAction func toggleTheTextEditor(sender: AnyObject) {
+        
+        if !(sender as! UISwitch).on {
+            self.switchControlledTextField.resignFirstResponder()
+        }
+    }
 }
 

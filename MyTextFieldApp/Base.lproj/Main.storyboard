@@ -18,13 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Zip Code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qc-NV-Pwq">
-                                <frame key="frameInset" minX="16" minY="53" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.00" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gW0-fy-2IY">
                                 <frame key="frameInset" minX="16" minY="103" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -43,16 +36,24 @@
                                 <frame key="frameInset" minX="310" minY="156" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="switch:" destination="BYZ-38-t0r" eventType="valueChanged" id="faR-TZ-CzZ"/>
+                                    <action selector="toggleTheTextEditorWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="sK2-UH-sxc"/>
                                 </connections>
                             </switch>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Zip Code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qc-NV-Pwq">
+                                <frame key="frameInset" minX="16" minY="50" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="cashTextField" destination="8bC-Xf-vdC" id="OOL-wB-Sah"/>
-                        <outlet property="switchControledTextField" destination="8bC-Xf-vdC" id="lMh-kX-WSk"/>
-                        <outlet property="zipCodeTextField" destination="8bC-Xf-vdC" id="r4t-fl-m4F"/>
+                        <outlet property="cashTextField" destination="gW0-fy-2IY" id="Vw5-8C-bGy"/>
+                        <outlet property="editingSwitch" destination="4qS-ju-kr6" id="8Ou-aT-CMy"/>
+                        <outlet property="switchControlledTextField" destination="SZZ-W8-ZWn" id="eJX-Oa-Nbj"/>
+                        <outlet property="zipCodeTextField" destination="5qc-NV-Pwq" id="FVK-nr-DVE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

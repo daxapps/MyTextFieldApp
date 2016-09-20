@@ -14,7 +14,6 @@
 		E0584D281D8F695E00535BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0584D261D8F695E00535BF3 /* LaunchScreen.storyboard */; };
 		E0584D301D8F6A9200535BF3 /* ZipCodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0584D2F1D8F6A9200535BF3 /* ZipCodeDelegate.swift */; };
 		E0584D321D8F6ABB00535BF3 /* CashDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0584D311D8F6ABB00535BF3 /* CashDelegate.swift */; };
-		E0584D341D8F6AD600535BF3 /* SwitchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0584D331D8F6AD600535BF3 /* SwitchDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		E0584D291D8F695E00535BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0584D2F1D8F6A9200535BF3 /* ZipCodeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeDelegate.swift; sourceTree = "<group>"; };
 		E0584D311D8F6ABB00535BF3 /* CashDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashDelegate.swift; sourceTree = "<group>"; };
-		E0584D331D8F6AD600535BF3 /* SwitchDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +66,6 @@
 				E0584D291D8F695E00535BF3 /* Info.plist */,
 				E0584D2F1D8F6A9200535BF3 /* ZipCodeDelegate.swift */,
 				E0584D311D8F6ABB00535BF3 /* CashDelegate.swift */,
-				E0584D331D8F6AD600535BF3 /* SwitchDelegate.swift */,
 			);
 			path = MyTextFieldApp;
 			sourceTree = "<group>";
@@ -148,7 +145,6 @@
 			files = (
 				E0584D201D8F695E00535BF3 /* ViewController.swift in Sources */,
 				E0584D301D8F6A9200535BF3 /* ZipCodeDelegate.swift in Sources */,
-				E0584D341D8F6AD600535BF3 /* SwitchDelegate.swift in Sources */,
 				E0584D1E1D8F695E00535BF3 /* AppDelegate.swift in Sources */,
 				E0584D321D8F6ABB00535BF3 /* CashDelegate.swift in Sources */,
 			);
@@ -314,6 +310,7 @@
 				E0584D2E1D8F695E00535BF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
